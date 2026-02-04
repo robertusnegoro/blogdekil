@@ -1,0 +1,106 @@
+@import "variables";
+
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400&display=swap");
+
+html {
+  font-size: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  font-family: $font-family-serif;
+  font-size: $font-size-md;
+  line-height: $line-height-base;
+  color: $color-text;
+  background-color: $color-bg;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $font-family-sans;
+  font-weight: 600;
+  line-height: $line-height-tight;
+  margin-top: 0;
+  margin-bottom: $space-md;
+}
+
+h1 { font-size: $font-size-3xl; }
+h2 { font-size: $font-size-2xl; margin-top: $space-2xl; }
+h3 { font-size: $font-size-xl; margin-top: $space-xl; }
+h4 { font-size: $font-size-lg; }
+
+p {
+  margin-top: 0;
+  margin-bottom: $space-md;
+}
+
+a {
+  color: $color-accent;
+  text-decoration: none;
+  &:hover { color: $color-accent-hover; text-decoration: underline; }
+}
+
+.prose {
+  max-width: $measure;
+  line-height: $line-height-relaxed;
+}
+
+.prose p:last-child,
+.prose > *:last-child {
+  margin-bottom: 0;
+}
+
+.prose code {
+  font-family: ui-monospace, monospace;
+  font-size: 0.9em;
+  padding: $space-xs $space-sm;
+  background: $color-bg-alt;
+  border-radius: $border-radius;
+}
+
+.prose pre {
+  overflow-x: auto;
+  padding: $space-md;
+  background: $color-bg-alt;
+  border-radius: $border-radius;
+  margin-bottom: $space-md;
+}
+
+.prose pre code {
+  padding: 0;
+  background: none;
+}
+
+.prose blockquote {
+  margin: $space-lg 0;
+  padding-left: $space-lg;
+  border-left: 4px solid $color-border;
+  color: $color-text-muted;
+}
+
+.prose ul, .prose ol {
+  margin-bottom: $space-md;
+  padding-left: $space-xl;
+}
+
+.prose li {
+  margin-bottom: $space-xs;
+}
+
+.prose img {
+  max-width: 100%;
+  height: auto;
+}
+
+.prose hr {
+  border: 0;
+  border-top: 1px solid $color-border;
+  margin: $space-2xl 0;
+}
+
+.label, .site-footer__tagline, .author-card__label, .post__date, .post-preview__date {
+  font-family: $font-family-sans;
+  font-size: $font-size-sm;
+  color: $color-text-muted;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}

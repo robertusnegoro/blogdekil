@@ -1,0 +1,41 @@
+---
+layout: default
+---
+
+<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+  <header class="post__header wrapper">
+    <h1 class="post__title" itemprop="name headline">{{ page.title }}</h1>
+    <time class="post__date" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%B %d, %Y" }}</time>
+  </header>
+
+  {% if page.image or page.featured_image %}
+    {% assign feat_img = page.image | default: page.featured_image %}
+    {% if feat_img contains "https://" or feat_img contains "http://" %}
+      {% assign feat_img_src = feat_img %}
+    {% else %}
+      {% assign feat_img_src = feat_img | prepend: site.baseurl %}
+    {% endif %}
+    <figure class="post__featured">
+      <img
+        src="{{ feat_img_src }}"
+        alt="{{ page.image_alt | default: page.title }}"
+        class="post__featured-img"
+        loading="eager"
+        width="1200"
+        height="630"
+      >
+    </figure>
+  {% endif %}
+
+  <div class="post__body wrapper wrapper--narrow">
+    <div class="post__content prose" itemprop="articleBody">
+      {{ content }}
+    </div>
+
+    {% include author.html author=page.author %}
+
+    {% if site.disqus_shortname and site.disqus_shortname != "" %}
+      {% include disqus.html %}
+    {% endif %}
+  </div>
+</article>

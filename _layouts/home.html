@@ -1,0 +1,56 @@
+---
+layout: default
+---
+
+<div class="home">
+  <section class="hero wrapper">
+    <h1 class="hero__title">{{ site.name | default: site.title }}</h1>
+    {% if site.description %}
+      <p class="hero__tagline">{{ site.description }}</p>
+    {% endif %}
+  </section>
+
+  <section class="posts-section wrapper">
+    <h2 class="posts-section__title">Recent posts</h2>
+    <ol class="post-list">
+      {% for post in paginator.posts %}
+        <li class="post-list__item">
+          <article class="post-preview">
+            <a href="{{ post.url | prepend: site.baseurl }}" class="post-preview__link">
+              {% if post.image or post.featured_image %}
+                {% assign thumb = post.image | default: post.featured_image %}
+                {% if thumb contains "https://" or thumb contains "http://" %}
+                  {% assign thumb_src = thumb %}
+                {% else %}
+                  {% assign thumb_src = thumb | prepend: site.baseurl %}
+                {% endif %}
+                <figure class="post-preview__thumb">
+                  <img src="{{ thumb_src }}" alt="" width="640" height="360" loading="lazy">
+                </figure>
+              {% endif %}
+              <div class="post-preview__body">
+                <h3 class="post-preview__title">{{ post.title }}</h3>
+                <time class="post-preview__date" datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %d, %Y" }}</time>
+                {% if post.excerpt %}
+                  <p class="post-preview__excerpt">{{ post.excerpt | strip_html | truncate: 160 }}</p>
+                {% endif %}
+              </div>
+            </a>
+          </article>
+        </li>
+      {% endfor %}
+    </ol>
+
+    {% if paginator.total_pages > 1 %}
+      <nav class="pagination" aria-label="Posts pagination">
+        {% if paginator.previous_page %}
+          <a class="pagination__prev" href="{{ paginator.previous_page_path | prepend: site.baseurl }}">Previous</a>
+        {% endif %}
+        <span class="pagination__info">Page {{ paginator.page }} of {{ paginator.total_pages }}</span>
+        {% if paginator.next_page %}
+          <a class="pagination__next" href="{{ paginator.next_page_path | prepend: site.baseurl }}">Next</a>
+        {% endif %}
+      </nav>
+    {% endif %}
+  </section>
+</div>

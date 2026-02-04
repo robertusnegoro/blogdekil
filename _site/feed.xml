@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.10.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2026-02-03T22:57:06+07:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Premium Blog</title><subtitle>A simple, elegant, professional Jekyll blog with readability-first typography.</subtitle><entry><title type="html">Welcome to the blog</title><link href="http://localhost:4000/2025/02/03/welcome-to-the-blog/" rel="alternate" type="text/html" title="Welcome to the blog" /><published>2025-02-03T19:00:00+07:00</published><updated>2025-02-03T19:00:00+07:00</updated><id>http://localhost:4000/2025/02/03/welcome-to-the-blog</id><content type="html" xml:base="http://localhost:4000/2025/02/03/welcome-to-the-blog/"><![CDATA[<p>This is an example post with a <strong>featured image</strong>. Set <code class="language-plaintext highlighter-rouge">image</code> (or <code class="language-plaintext highlighter-rouge">featured_image</code>) in the front matter to show a hero image above the content.</p>
+
+<p>You can use <strong>Markdown</strong> (Kramdown) for content. The theme uses readable typography and a constrained line length for comfortable reading.</p>
+
+<h2 id="configuration">Configuration</h2>
+
+<p>Edit <code class="language-plaintext highlighter-rouge">_config.yml</code> to set:</p>
+
+<ul>
+  <li><strong>Site</strong>: name, title, description, logo, favicon, baseurl</li>
+  <li><strong>Integrations</strong>: Disqus (<code class="language-plaintext highlighter-rouge">disqus_shortname</code>), Google Analytics (<code class="language-plaintext highlighter-rouge">google_analytics</code>), ads (<code class="language-plaintext highlighter-rouge">ads</code>, <code class="language-plaintext highlighter-rouge">ads_client</code>, <code class="language-plaintext highlighter-rouge">ads_slot</code>)</li>
+  <li><strong>Pagination</strong>: <code class="language-plaintext highlighter-rouge">paginate</code>, <code class="language-plaintext highlighter-rouge">paginate_path</code></li>
+  <li><strong>Permalink</strong>: <code class="language-plaintext highlighter-rouge">permalink</code></li>
+  <li><strong>Authors</strong>: add entries in <code class="language-plaintext highlighter-rouge">_data/authors.yml</code> and reference with <code class="language-plaintext highlighter-rouge">author: id</code> in posts</li>
+</ul>
+
+<p>Add your featured image at <code class="language-plaintext highlighter-rouge">assets/images/posts/welcome.jpg</code>, or use a <strong>full URL</strong> (e.g. from <a href="https://unsplash.com">Unsplash</a>) in <code class="language-plaintext highlighter-rouge">image</code> in the post front matter.</p>]]></content><author><name>Robi Negoro</name></author><summary type="html"><![CDATA[This is an example post with a featured image. Set image (or featured_image) in the front matter to show a hero image above the content.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://images.unsplash.com/photo-1500206329404-5057e0aefa48?q=80&amp;w=2352&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.1.0&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" /><media:content medium="image" url="https://images.unsplash.com/photo-1500206329404-5057e0aefa48?q=80&amp;w=2352&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.1.0&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Writing documentation that helps</title><link href="http://localhost:4000/2025/02/01/writing-documentation-that-helps/" rel="alternate" type="text/html" title="Writing documentation that helps" /><published>2025-02-01T19:00:00+07:00</published><updated>2025-02-01T19:00:00+07:00</updated><id>http://localhost:4000/2025/02/01/writing-documentation-that-helps</id><content type="html" xml:base="http://localhost:4000/2025/02/01/writing-documentation-that-helps/"><![CDATA[<p>Add your own voice and ideas. The structure is here; the rest is up to you.</p>
+
+<h2 id="section">Section</h2>
+
+<p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+
+<ul>
+  <li>Point one</li>
+  <li>Point two</li>
+  <li>Point three</li>
+</ul>
+
+<p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>]]></content><author><name>Robi Negoro</name></author><summary type="html"><![CDATA[Add your own voice and ideas. The structure is here; the rest is up to you.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://images.unsplash.com/photo-1557804506-669a67965ba0?w=1200&amp;q=80" /><media:content medium="image" url="https://images.unsplash.com/photo-1557804506-669a67965ba0?w=1200&amp;q=80" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">What I learned from writing daily</title><link href="http://localhost:4000/2025/01/27/what-i-learned-from-writing-daily/" rel="alternate" type="text/html" title="What I learned from writing daily" /><published>2025-01-27T19:00:00+07:00</published><updated>2025-01-27T19:00:00+07:00</updated><id>http://localhost:4000/2025/01/27/what-i-learned-from-writing-daily</id><content type="html" xml:base="http://localhost:4000/2025/01/27/what-i-learned-from-writing-daily/"><![CDATA[<p>Add your own voice and ideas. The structure is here; the rest is up to you.</p>
+
+<h2 id="section">Section</h2>
+
+<p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+
+<ul>
+  <li>Point one</li>
+  <li>Point two</li>
+  <li>Point three</li>
+</ul>
+
+<p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>]]></content><author><name>Robi Negoro</name></author><summary type="html"><![CDATA[Add your own voice and ideas. The structure is here; the rest is up to you.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://images.unsplash.com/photo-1504639725590-34d0984388bd?w=1200&amp;q=80" /><media:content medium="image" url="https://images.unsplash.com/photo-1504639725590-34d0984388bd?w=1200&amp;q=80" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">The case for slow technology</title><link href="http://localhost:4000/2025/01/22/the-case-for-slow-technology/" rel="alternate" type="text/html" title="The case for slow technology" /><published>2025-01-22T19:00:00+07:00</published><updated>2025-01-22T19:00:00+07:00</updated><id>http://localhost:4000/2025/01/22/the-case-for-slow-technology</id><content type="html" xml:base="http://localhost:4000/2025/01/22/the-case-for-slow-technology/"><![CDATA[<p>The theme is built for readability: comfortable line length, clear typography, and a minimal layout.</p>
+
+<h2 id="section">Section</h2>
+
+<p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+
+<ul>
+  <li>Point one</li>
+  <li>Point two</li>
+  <li>Point three</li>
+</ul>
+
+<p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>]]></content><author><name>Robi Negoro</name></author><summary type="html"><![CDATA[The theme is built for readability: comfortable line length, clear typography, and a minimal layout.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=1200&amp;q=80" /><media:content medium="image" url="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=1200&amp;q=80" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Why readability matters in design</title><link href="http://localhost:4000/2025/01/17/why-readability-matters-in-design/" rel="alternate" type="text/html" title="Why readability matters in design" /><published>2025-01-17T19:00:00+07:00</published><updated>2025-01-17T19:00:00+07:00</updated><id>http://localhost:4000/2025/01/17/why-readability-matters-in-design</id><content type="html" xml:base="http://localhost:4000/2025/01/17/why-readability-matters-in-design/"><![CDATA[<p>The theme is built for readability: comfortable line length, clear typography, and a minimal layout.</p>
+
+<h2 id="section">Section</h2>
+
+<p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+
+<ul>
+  <li>Point one</li>
+  <li>Point two</li>
+  <li>Point three</li>
+</ul>
+
+<p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>]]></content><author><name>Robi Negoro</name></author><summary type="html"><![CDATA[The theme is built for readability: comfortable line length, clear typography, and a minimal layout.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=1200&amp;q=80" /><media:content medium="image" url="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=1200&amp;q=80" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Thoughts on RSS and the open web</title><link href="http://localhost:4000/2025/01/12/thoughts-on-rss-and-the-open-web/" rel="alternate" type="text/html" title="Thoughts on RSS and the open web" /><published>2025-01-12T19:00:00+07:00</published><updated>2025-01-12T19:00:00+07:00</updated><id>http://localhost:4000/2025/01/12/thoughts-on-rss-and-the-open-web</id><content type="html" xml:base="http://localhost:4000/2025/01/12/thoughts-on-rss-and-the-open-web/"><![CDATA[<p>Add your own voice and ideas. The structure is here; the rest is up to you.</p>
+
+<h2 id="section">Section</h2>
+
+<p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+
+<ul>
+  <li>Point one</li>
+  <li>Point two</li>
+  <li>Point three</li>
+</ul>
+
+<p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>]]></content><author><name>Robi Negoro</name></author><summary type="html"><![CDATA[Add your own voice and ideas. The structure is here; the rest is up to you.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=1200&amp;q=80" /><media:content medium="image" url="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=1200&amp;q=80" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Learning in public: one year in</title><link href="http://localhost:4000/2025/01/07/learning-in-public-one-year-in/" rel="alternate" type="text/html" title="Learning in public: one year in" /><published>2025-01-07T19:00:00+07:00</published><updated>2025-01-07T19:00:00+07:00</updated><id>http://localhost:4000/2025/01/07/learning-in-public-one-year-in</id><content type="html" xml:base="http://localhost:4000/2025/01/07/learning-in-public-one-year-in/"><![CDATA[<p>This is a sample post to populate the blog. Replace this content with your own writing.</p>
+
+<h2 id="section">Section</h2>
+
+<p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+
+<ul>
+  <li>Point one</li>
+  <li>Point two</li>
+  <li>Point three</li>
+</ul>
+
+<p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>]]></content><author><name>Robi Negoro</name></author><summary type="html"><![CDATA[This is a sample post to populate the blog. Replace this content with your own writing.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=1200&amp;q=80" /><media:content medium="image" url="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=1200&amp;q=80" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Closing thoughts on simplicity</title><link href="http://localhost:4000/2025/01/02/closing-thoughts-on-simplicity/" rel="alternate" type="text/html" title="Closing thoughts on simplicity" /><published>2025-01-02T19:00:00+07:00</published><updated>2025-01-02T19:00:00+07:00</updated><id>http://localhost:4000/2025/01/02/closing-thoughts-on-simplicity</id><content type="html" xml:base="http://localhost:4000/2025/01/02/closing-thoughts-on-simplicity/"><![CDATA[<p>Add your own voice and ideas. The structure is here; the rest is up to you.</p>
+
+<h2 id="section">Section</h2>
+
+<p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+
+<ul>
+  <li>Point one</li>
+  <li>Point two</li>
+  <li>Point three</li>
+</ul>
+
+<p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>]]></content><author><name>Robi Negoro</name></author><summary type="html"><![CDATA[Add your own voice and ideas. The structure is here; the rest is up to you.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=1200&amp;q=80" /><media:content medium="image" url="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=1200&amp;q=80" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Reflections on digital minimalism</title><link href="http://localhost:4000/2024/12/28/reflections-on-digital-minimalism/" rel="alternate" type="text/html" title="Reflections on digital minimalism" /><published>2024-12-28T19:00:00+07:00</published><updated>2024-12-28T19:00:00+07:00</updated><id>http://localhost:4000/2024/12/28/reflections-on-digital-minimalism</id><content type="html" xml:base="http://localhost:4000/2024/12/28/reflections-on-digital-minimalism/"><![CDATA[<p>You can edit or delete these posts. Each post supports a featured image, author, and optional Disqus comments.</p>
+
+<h2 id="section">Section</h2>
+
+<p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+
+<ul>
+  <li>Point one</li>
+  <li>Point two</li>
+  <li>Point three</li>
+</ul>
+
+<p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>]]></content><author><name>Robi Negoro</name></author><summary type="html"><![CDATA[You can edit or delete these posts. Each post supports a featured image, author, and optional Disqus comments.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://images.unsplash.com/photo-1455390582262-044cdead277a?w=1200&amp;q=80" /><media:content medium="image" url="https://images.unsplash.com/photo-1455390582262-044cdead277a?w=1200&amp;q=80" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">A few words on open source</title><link href="http://localhost:4000/2024/12/23/a-few-words-on-open-source/" rel="alternate" type="text/html" title="A few words on open source" /><published>2024-12-23T19:00:00+07:00</published><updated>2024-12-23T19:00:00+07:00</updated><id>http://localhost:4000/2024/12/23/a-few-words-on-open-source</id><content type="html" xml:base="http://localhost:4000/2024/12/23/a-few-words-on-open-source/"><![CDATA[<p>The theme is built for readability: comfortable line length, clear typography, and a minimal layout.</p>
+
+<h2 id="section">Section</h2>
+
+<p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+
+<ul>
+  <li>Point one</li>
+  <li>Point two</li>
+  <li>Point three</li>
+</ul>
+
+<p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>]]></content><author><name>Robi Negoro</name></author><summary type="html"><![CDATA[The theme is built for readability: comfortable line length, clear typography, and a minimal layout.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=1200&amp;q=80" /><media:content medium="image" url="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=1200&amp;q=80" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>
