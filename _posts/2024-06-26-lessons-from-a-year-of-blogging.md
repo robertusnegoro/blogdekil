@@ -3,6 +3,7 @@ layout: post
 title: "Lessons from a year of blogging"
 date: 2024-06-26 12:00:00 +0000
 author: default
+categories: Writing
 image: https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=1200&q=80
 image_alt: "Lessons from a year of blogging"
 ---

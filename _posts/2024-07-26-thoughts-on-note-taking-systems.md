@@ -3,6 +3,7 @@ layout: post
 title: "Thoughts on note-taking systems"
 date: 2024-07-26 12:00:00 +0000
 author: default
+categories: Personal
 image: https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=1200&q=80
 image_alt: "Thoughts on note-taking systems"
 ---

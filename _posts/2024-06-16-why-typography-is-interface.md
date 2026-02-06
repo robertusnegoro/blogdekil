@@ -3,6 +3,7 @@ layout: post
 title: "Why typography is interface"
 date: 2024-06-16 12:00:00 +0000
 author: default
+categories: Design
 image: https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=1200&q=80
 image_alt: "Why typography is interface"
 ---

@@ -3,6 +3,7 @@ layout: post
 title: "Why readability matters in design"
 date: 2025-01-17 12:00:00 +0000
 author: default
+categories: Design
 image: https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=1200&q=80
 image_alt: "Why readability matters in design"
 ---

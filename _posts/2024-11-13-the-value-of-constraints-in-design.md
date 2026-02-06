@@ -3,6 +3,7 @@ layout: post
 title: "The value of constraints in design"
 date: 2024-11-13 12:00:00 +0000
 author: default
+categories: Design
 image: https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=1200&q=80
 image_alt: "The value of constraints in design"
 ---

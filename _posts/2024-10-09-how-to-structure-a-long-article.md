@@ -3,6 +3,7 @@ layout: post
 title: "How to structure a long article"
 date: 2024-10-09 12:00:00 +0000
 author: default
+categories: Writing
 image: https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=1200&q=80
 image_alt: "How to structure a long article"
 ---

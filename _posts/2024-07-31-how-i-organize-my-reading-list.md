@@ -3,6 +3,7 @@ layout: post
 title: "How I organize my reading list"
 date: 2024-07-31 12:00:00 +0000
 author: default
+categories: Personal
 image: https://images.unsplash.com/photo-1455390582262-044cdead277a?w=1200&q=80
 image_alt: "How I organize my reading list"
 ---

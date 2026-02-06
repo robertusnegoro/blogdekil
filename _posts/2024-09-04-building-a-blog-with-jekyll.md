@@ -3,6 +3,7 @@ layout: post
 title: "Building a blog with Jekyll"
 date: 2024-09-04 12:00:00 +0000
 author: default
+categories: Development
 image: https://images.unsplash.com/photo-1557804506-669a67965ba0?w=1200&q=80
 image_alt: "Building a blog with Jekyll"
 ---

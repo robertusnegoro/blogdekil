@@ -3,6 +3,7 @@ layout: post
 title: "A brief history of my setup"
 date: 2024-12-03 12:00:00 +0000
 author: default
+categories: Tools
 image: https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=1200&q=80
 image_alt: "A brief history of my setup"
 ---

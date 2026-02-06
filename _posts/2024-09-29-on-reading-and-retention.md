@@ -3,6 +3,7 @@ layout: post
 title: "On reading and retention"
 date: 2024-09-29 12:00:00 +0000
 author: default
+categories: Learning
 image: https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=1200&q=80
 image_alt: "On reading and retention"
 ---

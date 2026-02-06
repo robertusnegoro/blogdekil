@@ -3,6 +3,7 @@ layout: post
 title: "How I approach new projects"
 date: 2024-07-16 12:00:00 +0000
 author: default
+categories: Personal
 image: https://images.unsplash.com/photo-1557804506-669a67965ba0?w=1200&q=80
 image_alt: "How I approach new projects"
 ---

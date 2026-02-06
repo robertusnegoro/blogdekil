@@ -12,5 +12,52 @@
     {% endif %}
   </main>
   {% include footer.html %}
+  <script>
+    // Dropdown menu toggle for mobile/touch devices
+    (function() {
+      function initDropdown() {
+        const dropdownButton = document.querySelector('.site-header__link--dropdown');
+        const dropdownMenu = document.querySelector('.site-header__dropdown-menu');
+        const dropdown = document.querySelector('.site-header__dropdown');
+        
+        if (!dropdownButton || !dropdownMenu || !dropdown) {
+          return;
+        }
+        
+        dropdownButton.addEventListener('click', function(e) {
+          e.preventDefault();
+          e.stopPropagation();
+          const isOpen = dropdown.classList.contains('is-open');
+          
+          if (isOpen) {
+            dropdown.classList.remove('is-open');
+            dropdownButton.setAttribute('aria-expanded', 'false');
+          } else {
+            dropdown.classList.add('is-open');
+            dropdownButton.setAttribute('aria-expanded', 'true');
+          }
+        });
+        
+        // Close dropdown when clicking outside
+        document.addEventListener('click', function(e) {
+          if (dropdown && !dropdown.contains(e.target)) {
+            dropdown.classList.remove('is-open');
+            dropdownButton.setAttribute('aria-expanded', 'false');
+          }
+        });
+        
+        // Prevent dropdown from closing when clicking inside it
+        dropdownMenu.addEventListener('click', function(e) {
+          e.stopPropagation();
+        });
+      }
+      
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', initDropdown);
+      } else {
+        initDropdown();
+      }
+    })();
+  </script>
 </body>
 </html>

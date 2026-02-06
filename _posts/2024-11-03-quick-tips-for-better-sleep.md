@@ -3,6 +3,7 @@ layout: post
 title: "Quick tips for better sleep"
 date: 2024-11-03 12:00:00 +0000
 author: default
+categories: Productivity
 image: https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=1200&q=80
 image_alt: "Quick tips for better sleep"
 ---

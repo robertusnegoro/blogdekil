@@ -3,6 +3,7 @@ layout: post
 title: "The art of the small commit"
 date: 2024-06-01 12:00:00 +0000
 author: default
+categories: Development
 image: https://images.unsplash.com/photo-1499750310107-5fef28a66643?w=1200&q=80
 image_alt: "The art of the small commit"
 ---

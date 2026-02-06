@@ -3,6 +3,7 @@ layout: post
 title: "A short guide to typography on the web"
 date: 2024-07-01 12:00:00 +0000
 author: default
+categories: Design
 image: https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=1200&q=80
 image_alt: "A short guide to typography on the web"
 ---

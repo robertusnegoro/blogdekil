@@ -3,6 +3,7 @@ layout: post
 title: "On curiosity and learning"
 date: 2024-12-18 12:00:00 +0000
 author: default
+categories: Learning
 image: https://images.unsplash.com/photo-1499750310107-5fef28a66643?w=1200&q=80
 image_alt: "On curiosity and learning"
 ---

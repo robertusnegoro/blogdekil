@@ -3,6 +3,7 @@ layout: post
 title: "What I learned from writing daily"
 date: 2025-01-27 12:00:00 +0000
 author: default
+categories: Writing
 image: https://images.unsplash.com/photo-1504639725590-34d0984388bd?w=1200&q=80
 image_alt: "What I learned from writing daily"
 ---

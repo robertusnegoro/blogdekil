@@ -3,6 +3,7 @@ layout: post
 title: "Thoughts on RSS and the open web"
 date: 2025-01-12 12:00:00 +0000
 author: default
+categories: Tools
 image: https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=1200&q=80
 image_alt: "Thoughts on RSS and the open web"
 ---

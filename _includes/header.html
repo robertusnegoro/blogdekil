@@ -13,6 +13,34 @@
           <a class="site-header__link" href="{{ p.url | prepend: site.baseurl }}">{{ p.title }}</a>
         {% endif %}
       {% endfor %}
+      {% assign categories_list = site.categories | sort %}
+      {% if categories_list.size > 0 %}
+        <div class="site-header__dropdown">
+          <button class="site-header__link site-header__link--dropdown" aria-expanded="false" aria-haspopup="true" type="button">Categories</button>
+          <ul class="site-header__dropdown-menu" role="menu">
+            {% for category in categories_list %}
+              {% assign category_name = category[0] %}
+              {% assign category_url = nil %}
+              {% comment %} Try to find archive page first {% endcomment %}
+              {% for archive in site.archives %}
+                {% if archive.type == 'category' and archive.title == category_name %}
+                  {% assign category_url = archive.url | prepend: site.baseurl %}
+                  {% break %}
+                {% endif %}
+              {% endfor %}
+              {% comment %} Fallback: try exact name, then slugified {% endcomment %}
+              {% if category_url == nil %}
+                {% assign category_url = '/category/' | append: category_name | prepend: site.baseurl | append: '/' %}
+              {% endif %}
+              <li role="none">
+                <a class="site-header__dropdown-link" href="{{ category_url }}" role="menuitem">
+                  {{ category_name }} ({{ category[1].size }})
+                </a>
+              </li>
+            {% endfor %}
+          </ul>
+        </div>
+      {% endif %}
     </nav>
   </div>
 </header>

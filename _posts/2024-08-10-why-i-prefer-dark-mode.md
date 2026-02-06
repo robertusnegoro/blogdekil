@@ -3,6 +3,7 @@ layout: post
 title: "Why I prefer dark mode"
 date: 2024-08-10 12:00:00 +0000
 author: default
+categories: Design
 image: https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=1200&q=80
 image_alt: "Why I prefer dark mode"
 ---

@@ -3,6 +3,7 @@ layout: post
 title: "On building in public"
 date: 2024-08-15 12:00:00 +0000
 author: default
+categories: Personal
 image: https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=1200&q=80
 image_alt: "On building in public"
 ---

@@ -3,6 +3,7 @@ layout: post
 title: "Making time for deep work"
 date: 2024-12-08 12:00:00 +0000
 author: default
+categories: Productivity
 image: https://images.unsplash.com/photo-1504639725590-34d0984388bd?w=1200&q=80
 image_alt: "Making time for deep work"
 ---

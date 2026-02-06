@@ -3,6 +3,7 @@ layout: post
 title: "Building habits that stick"
 date: 2024-07-21 12:00:00 +0000
 author: default
+categories: Productivity
 image: https://images.unsplash.com/photo-1499750310107-5fef28a66643?w=1200&q=80
 image_alt: "Building habits that stick"
 ---

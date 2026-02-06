@@ -3,6 +3,7 @@ layout: post
 title: "Keeping a personal knowledge base"
 date: 2024-11-08 12:00:00 +0000
 author: default
+categories: Personal
 image: https://images.unsplash.com/photo-1455390582262-044cdead277a?w=1200&q=80
 image_alt: "Keeping a personal knowledge base"
 ---

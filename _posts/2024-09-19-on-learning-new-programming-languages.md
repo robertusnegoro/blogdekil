@@ -3,6 +3,7 @@ layout: post
 title: "On learning new programming languages"
 date: 2024-09-19 12:00:00 +0000
 author: default
+categories: Learning
 image: https://images.unsplash.com/photo-1455390582262-044cdead277a?w=1200&q=80
 image_alt: "On learning new programming languages"
 ---

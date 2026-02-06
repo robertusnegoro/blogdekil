@@ -59,6 +59,99 @@
           <a class="site-header__link" href="/privacy/">Privacy</a>
         
       
+      
+      
+        <div class="site-header__dropdown">
+          <button class="site-header__link site-header__link--dropdown" aria-expanded="false" aria-haspopup="true" type="button">Categories</button>
+          <ul class="site-header__dropdown-menu" role="menu">
+            
+              
+              
+              
+              
+              
+              
+              <li role="none">
+                <a class="site-header__dropdown-link" href="/category/Design/" role="menuitem">
+                  Design (8)
+                </a>
+              </li>
+            
+              
+              
+              
+              
+              
+              
+              <li role="none">
+                <a class="site-header__dropdown-link" href="/category/Development/" role="menuitem">
+                  Development (4)
+                </a>
+              </li>
+            
+              
+              
+              
+              
+              
+              
+              <li role="none">
+                <a class="site-header__dropdown-link" href="/category/Learning/" role="menuitem">
+                  Learning (4)
+                </a>
+              </li>
+            
+              
+              
+              
+              
+              
+              
+              <li role="none">
+                <a class="site-header__dropdown-link" href="/category/Personal/" role="menuitem">
+                  Personal (14)
+                </a>
+              </li>
+            
+              
+              
+              
+              
+              
+              
+              <li role="none">
+                <a class="site-header__dropdown-link" href="/category/Productivity/" role="menuitem">
+                  Productivity (5)
+                </a>
+              </li>
+            
+              
+              
+              
+              
+              
+              
+              <li role="none">
+                <a class="site-header__dropdown-link" href="/category/Tools/" role="menuitem">
+                  Tools (11)
+                </a>
+              </li>
+            
+              
+              
+              
+              
+              
+              
+              <li role="none">
+                <a class="site-header__dropdown-link" href="/category/Writing/" role="menuitem">
+                  Writing (5)
+                </a>
+              </li>
+            
+          </ul>
+        </div>
+      
     </nav>
   </div>
 </header>
@@ -73,15 +166,64 @@
     
   </main>
   <footer class="site-footer" role="contentinfo">
-  <div class="site-footer__inner wrapper">
-    <p class="site-footer__copy">
-      &copy; 2026 Premium Blog. All rights reserved.
-    </p>
-    
-      <p class="site-footer__tagline">A simple, elegant, professional Jekyll blog with readability-first typography.</p>
-    
+  <div class="wrapper">
+    <div class="site-footer__inner">
+      <p class="site-footer__copy">
+        &copy; 2026 Premium Blog. All rights reserved.
+      </p>
+      
+        <p class="site-footer__tagline">A simple, elegant, professional Jekyll blog with readability-first typography.</p>
+      
+    </div>
   </div>
 </footer>
 
+  <script>
+    // Dropdown menu toggle for mobile/touch devices
+    (function() {
+      function initDropdown() {
+        const dropdownButton = document.querySelector('.site-header__link--dropdown');
+        const dropdownMenu = document.querySelector('.site-header__dropdown-menu');
+        const dropdown = document.querySelector('.site-header__dropdown');
+        
+        if (!dropdownButton || !dropdownMenu || !dropdown) {
+          return;
+        }
+        
+        dropdownButton.addEventListener('click', function(e) {
+          e.preventDefault();
+          e.stopPropagation();
+          const isOpen = dropdown.classList.contains('is-open');
+          
+          if (isOpen) {
+            dropdown.classList.remove('is-open');
+            dropdownButton.setAttribute('aria-expanded', 'false');
+          } else {
+            dropdown.classList.add('is-open');
+            dropdownButton.setAttribute('aria-expanded', 'true');
+          }
+        });
+        
+        // Close dropdown when clicking outside
+        document.addEventListener('click', function(e) {
+          if (dropdown && !dropdown.contains(e.target)) {
+            dropdown.classList.remove('is-open');
+            dropdownButton.setAttribute('aria-expanded', 'false');
+          }
+        });
+        
+        // Prevent dropdown from closing when clicking inside it
+        dropdownMenu.addEventListener('click', function(e) {
+          e.stopPropagation();
+        });
+      }
+      
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', initDropdown);
+      } else {
+        initDropdown();
+      }
+    })();
+  </script>
 </body>
 </html>

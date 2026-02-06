@@ -3,6 +3,7 @@ layout: post
 title: "Learning to write in public"
 date: 2024-06-11 12:00:00 +0000
 author: default
+categories: Writing
 image: https://images.unsplash.com/photo-1455390582262-044cdead277a?w=1200&q=80
 image_alt: "Learning to write in public"
 ---

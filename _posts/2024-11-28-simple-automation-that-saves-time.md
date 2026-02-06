@@ -3,6 +3,7 @@ layout: post
 title: "Simple automation that saves time"
 date: 2024-11-28 12:00:00 +0000
 author: default
+categories: Tools
 image: https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=1200&q=80
 image_alt: "Simple automation that saves time"
 ---

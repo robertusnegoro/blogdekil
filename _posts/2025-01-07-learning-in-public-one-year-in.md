@@ -3,6 +3,7 @@ layout: post
 title: "Learning in public: one year in"
 date: 2025-01-07 12:00:00 +0000
 author: default
+categories: Learning
 image: https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=1200&q=80
 image_alt: "Learning in public: one year in"
 ---

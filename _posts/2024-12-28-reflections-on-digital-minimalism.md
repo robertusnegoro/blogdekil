@@ -3,6 +3,7 @@ layout: post
 title: "Reflections on digital minimalism"
 date: 2024-12-28 12:00:00 +0000
 author: default
+categories: Personal
 image: https://images.unsplash.com/photo-1455390582262-044cdead277a?w=1200&q=80
 image_alt: "Reflections on digital minimalism"
 ---

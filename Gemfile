@@ -9,4 +9,4 @@ gem "github-pages", group: :jekyll_plugins
 
 # Optional: jekyll-archives (not on GitHub Pages whitelist)
 # Uncomment to use with local build or GitHub Actions deploy
-# gem "jekyll-archives"
+gem "jekyll-archives"

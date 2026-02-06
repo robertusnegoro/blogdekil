@@ -3,6 +3,7 @@ layout: post
 title: "Welcome to the blog"
 date: 2025-02-03 12:00:00 +0000
 author: default
+categories: Personal
 image: https://images.unsplash.com/photo-1500206329404-5057e0aefa48?q=80&w=2352&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
 image_alt: Welcome
 ---

@@ -3,6 +3,7 @@ layout: post
 title: "Getting started with static sites"
 date: 2024-08-20 12:00:00 +0000
 author: default
+categories: Development
 image: https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=1200&q=80
 image_alt: "Getting started with static sites"
 ---
