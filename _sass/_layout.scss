@@ -9,7 +9,7 @@
   padding-right: $space-md;
   box-sizing: border-box;
   overflow-x: hidden;
-  
+
   @media (min-width: $breakpoint-sm) {
     max-width: $breakpoint-lg;
     padding-left: $space-lg;
@@ -21,7 +21,7 @@
 .site-footer .wrapper {
   padding-left: $space-md;
   padding-right: $space-md;
-  
+
   @media (min-width: $breakpoint-sm) {
     padding-left: $space-lg;
     padding-right: $space-lg;
@@ -31,7 +31,7 @@
 .wrapper--narrow {
   max-width: 100%;
   box-sizing: border-box;
-  
+
   @media (min-width: $breakpoint-sm) {
     max-width: $measure-narrow;
   }
@@ -62,7 +62,8 @@
   width: 100%;
   max-width: 100%;
   box-sizing: border-box;
-  
+  overflow: visible; // Allow dropdown menus to overflow
+
   @media (min-width: $breakpoint-sm) {
     gap: $space-md;
   }
@@ -79,14 +80,14 @@
   text-decoration: none;
   transition: color 0.2s ease;
   flex-shrink: 0;
-  
+
   @media (min-width: $breakpoint-sm) {
     font-size: $font-size-lg;
   }
-  
-  &:hover { 
-    color: $color-accent; 
-    text-decoration: none; 
+
+  &:hover {
+    color: $color-accent;
+    text-decoration: none;
   }
 }
 
@@ -104,11 +105,11 @@
   flex-wrap: wrap;
   width: 100%;
   max-width: 100%;
-  
+
   @media (min-width: $breakpoint-sm) {
     gap: $space-md;
   }
-  
+
   @media (min-width: $breakpoint-md) {
     gap: $space-lg;
     width: auto;
@@ -120,7 +121,10 @@
   font-size: $font-size-sm;
   color: $color-text-muted;
   text-decoration: none;
-  &:hover { color: $color-accent; }
+
+  &:hover {
+    color: $color-accent;
+  }
 }
 
 .site-header__dropdown {
@@ -136,7 +140,7 @@
   font-size: $font-size-sm;
   color: $color-text-muted;
   text-decoration: none;
-  
+
   &:hover {
     color: $color-accent;
   }
@@ -146,7 +150,7 @@
   position: absolute;
   top: 100%;
   right: 0;
-  margin-top: $space-xs;
+  margin-top: 0;
   min-width: 180px;
   max-width: calc(100vw - 2rem);
   background: $color-bg;
@@ -163,7 +167,18 @@
   z-index: 1000;
   box-sizing: border-box;
   pointer-events: none;
-  
+
+  // Bridge the gap between button and menu for hover
+  &::before {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: 0;
+    right: 0;
+    height: 10px;
+    background: transparent;
+  }
+
   @media (min-width: $breakpoint-sm) {
     min-width: 200px;
   }
@@ -193,6 +208,7 @@
   color: $color-text;
   text-decoration: none;
   transition: background-color 0.2s;
+
   &:hover {
     background: $color-bg-alt;
     text-decoration: none;

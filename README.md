@@ -187,18 +187,32 @@ Reference in posts: `author: jane`.
 
 Markdown is rendered with **Kramdown** (GFM input, Rouge syntax highlighting). Options are in `_config.yml` under `kramdown:`.
 
-### jekyll-archives (optional)
+### Automated Category Pages
+To support category pages on GitHub Pages (where the `jekyll-archives` plugin is restricted), this project uses a local shell script to generate static category files.
 
-**jekyll-archives** is not on the GitHub Pages whitelist. To use it:
+1.  **Create a post** with a category:
+    ```yaml
+    ---
+    title: "My New Post"
+    category: Design
+    ---
+    ```
+2.  **Run the generation script** locally:
+    ```bash
+    ./bin/generate_categories.sh
+    ```
+3.  **Commit** the generated `category/` files along with your post.
 
-1. Uncomment `gem "jekyll-archives"` in **Gemfile**.
-2. Uncomment the `jekyll-archives` plugin and `jekyll_archives:` config block in **`_config.yml`**.
-3. Use **GitHub Actions** to build and deploy:
-   - In the repo: **Settings → Pages → Build and deployment → Source**: choose **GitHub Actions**.
-   - Disable “Build from branch” if it was enabled.
-   - Push to `main`; the workflow in `.github/workflows/jekyll-pages.yml` will build and deploy.
+This script scans your `_posts` directory and automatically creates/updates the `category/<name>/index.md` files needed to display category archives.
 
-If you do not need jekyll-archives, you can keep using **Pages → Build from branch** with the default branch; the same Gemfile and config work.
+### Sample Content Generation
+To populate your blog with sample posts (useful for testing pagination and layout):
+
+```bash
+ruby scripts/generate_posts.rb
+```
+
+This will create 50 sample posts in `_posts/` with various dates, categories, and featured images.
 
 ## Project structure
 
@@ -213,6 +227,8 @@ If you do not need jekyll-archives, you can keep using **Pages → Build from br
 ├── assets/images/    # Logo, favicon, post images
 ├── _posts/           # Blog posts
 ├── _pages/           # Optional pages (about, etc.) via “pages” collection
+├── scripts/          # Helper scripts (content generation, etc.)
+├── bin/              # Utility scripts (category generation)
 ├── index.html        # Home (layout: home, paginated)
 └── .github/workflows/jekyll-pages.yml  # Optional: build + deploy with custom plugins
 ```

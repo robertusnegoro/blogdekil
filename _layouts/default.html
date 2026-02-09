@@ -1,57 +1,73 @@
 <!DOCTYPE html>
 <html lang="{{ page.lang | default: site.lang | default: 'en' }}">
+
 <head>
   {% include head.html %}
 </head>
+
 <body class="layout-default">
   {% include header.html %}
   <main class="main" id="main">
     {{ content }}
     {% if site.ads %}
-      {% include ads.html %}
+    {% include ads.html %}
     {% endif %}
   </main>
   {% include footer.html %}
   <script>
     // Dropdown menu toggle for mobile/touch devices
-    (function() {
+    (function () {
       function initDropdown() {
-        const dropdownButton = document.querySelector('.site-header__link--dropdown');
-        const dropdownMenu = document.querySelector('.site-header__dropdown-menu');
-        const dropdown = document.querySelector('.site-header__dropdown');
-        
-        if (!dropdownButton || !dropdownMenu || !dropdown) {
-          return;
-        }
-        
-        dropdownButton.addEventListener('click', function(e) {
-          e.preventDefault();
-          e.stopPropagation();
-          const isOpen = dropdown.classList.contains('is-open');
-          
-          if (isOpen) {
-            dropdown.classList.remove('is-open');
-            dropdownButton.setAttribute('aria-expanded', 'false');
-          } else {
-            dropdown.classList.add('is-open');
-            dropdownButton.setAttribute('aria-expanded', 'true');
-          }
+        // Use querySelectorAll in case of multiple instances, though usually one
+        const dropdowns = document.querySelectorAll('.site-header__dropdown');
+
+        dropdowns.forEach(dropdown => {
+          const button = dropdown.querySelector('.site-header__link--dropdown');
+          const menu = dropdown.querySelector('.site-header__dropdown-menu');
+
+          if (!button || !menu) return;
+
+          button.addEventListener('click', function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+            const isOpen = dropdown.classList.contains('is-open');
+
+            // Close all other dropdowns
+            dropdowns.forEach(d => {
+              if (d !== dropdown) {
+                d.classList.remove('is-open');
+                const btn = d.querySelector('.site-header__link--dropdown');
+                if (btn) btn.setAttribute('aria-expanded', 'false');
+              }
+            });
+
+            if (isOpen) {
+              dropdown.classList.remove('is-open');
+              button.setAttribute('aria-expanded', 'false');
+            } else {
+              dropdown.classList.add('is-open');
+              button.setAttribute('aria-expanded', 'true');
+            }
+          });
+
+          // Prevent closing when clicking inside menu
+          menu.addEventListener('click', function (e) {
+            e.stopPropagation();
+          });
         });
-        
-        // Close dropdown when clicking outside
-        document.addEventListener('click', function(e) {
-          if (dropdown && !dropdown.contains(e.target)) {
-            dropdown.classList.remove('is-open');
-            dropdownButton.setAttribute('aria-expanded', 'false');
-          }
-        });
-        
-        // Prevent dropdown from closing when clicking inside it
-        dropdownMenu.addEventListener('click', function(e) {
-          e.stopPropagation();
+
+        // Close when clicking outside
+        document.addEventListener('click', function (e) {
+          dropdowns.forEach(dropdown => {
+            if (!dropdown.contains(e.target)) {
+              dropdown.classList.remove('is-open');
+              const btn = dropdown.querySelector('.site-header__link--dropdown');
+              if (btn) btn.setAttribute('aria-expanded', 'false');
+            }
+          });
         });
       }
-      
+
       if (document.readyState === 'loading') {
         document.addEventListener('DOMContentLoaded', initDropdown);
       } else {
@@ -60,4 +76,5 @@
     })();
   </script>
 </body>
+
 </html>
