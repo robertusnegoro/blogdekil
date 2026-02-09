@@ -1,0 +1,12 @@
+_site/
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
+.bundle/
+vendor/
+
+# System/IDE
+.DS_Store
+.ruby-lsp/
+.vscode/
+.idea/
